@@ -131,6 +131,10 @@ span {
     display: flex;
 }
 
+.collapse-on-sm.show {
+    display: flex;
+}
+
 .accordion-button {
     display: none;
     width: auto;
@@ -215,5 +219,6 @@ span {
     }
     .accordion-button {
         display: flex;
+        padding: 12px;
     }
 }
