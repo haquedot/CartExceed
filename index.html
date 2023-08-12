@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <title>CartExceed</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <div class="container p-0 ">
         <h6 class="py-2 ps-4">Cart</h6>
         <div class="container row cart">
-            <div class="container col-lg-8">
+            <div class="container col-lg-8 order-2 order-lg-1">
                 <div class="container-fluid row cart-1 p-2">
                     <div class="container cart-content col-lg-10 row p-0">
                         <div class="row p-0">
@@ -25,8 +27,8 @@
                                 <div class="d-flex heading-left p-3">
                                     <p>MIS- Discovery Age 7&8 Sundays 10:00AM SO23-01-DSC 1-Sep-Oct 2023</p>
                                 </div>
-                                <div class="d-flex heading-right ">
-                                    <span align="right" class="remove hide-show p-2"><i class="bi bi-trash"></i></span>
+                                <div class="heading-right hide-show">
+                                    <i class="bi bi-trash"></i>
                                 </div>
                             </div>
                             <div class=" col-lg-3 hide-show">
@@ -44,247 +46,256 @@
 
                         </div>
                         <hr>
-                        <div class="d-flex">
-                            <div class="d-flex justify-content-left">
-                                <p class="py-2">Student Details</p>
+                        <div class="accordion p-0" id="accordionExample">
+                            <div class="d-flex px-2">
+                                <div class="d-flex justify-content-left">
+                                    Student Details
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    </button>
+                                </div>
+                                <div class="justify-content-right hide-show">
+                                    <i class="bi bi-pencil-fill "></i><span align="right" class="ps-2 hide-show">Edit</span>
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-right ">
-                                <i class="bi bi-pencil-fill hide-show"></i><span align="right" class="ps-2 hide-show">Edit</span>
-                            </div>
-                        </div>
 
-                        <div class="cart-details row p-0">
-                            <div class="col-lg-10 row d-flex">
-                                <div class="col-lg-5">
-                                    <p>First Name<br><span>loremipsum@gmail.com</span></p>
+                            <div class="cart-details row p-0 ">
+                                <div class=" col-lg-10 row p-0 accordion-collapse collapse-on-sm" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="col-lg-5 ">
+                                        <p>First Name<br><span>loremipsum@gmail.com</span></p>
+                                    </div>
+                                    <div class="col-lg-4 ">
+                                        <p>Last Name<br><span>+91 9003557123</span></p>
+                                    </div>
+                                    <div class="col-lg-3 ">
+                                        <p>Date of birth<br><span>22 Sep 2000</span></p>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <p>Last Name<br><span>+91 9003557123</span></p>
-                                </div>
-                                <div class="col-lg-3">
-                                    <p>Date of birth<br><span>22 Sep 2000</span></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 row p-0">
-                                <div class="orange tution-fee p-3">
-                                    <p>Tution Fee +HST
+                                <div class="col-lg-2 row p-0 ">
+                                    <div class="orange tution-fee ">
+                                        <p>Tution Fee +HST
 
-                                    </p>
-                                    <h4>$360</h4>
+                                        </p>
+                                        <h4>$360</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 py-3 edit-remove">
+                    <div class="col-lg-2 py-3 edit-remove ">
 
-                        <div class="edit">
+                        <div class="edit ">
                             Edit
                         </div>
-                        <div class="remove">
+                        <div class="remove ">
                             Remove
                         </div>
                     </div>
 
 
                 </div>
-                <div class="container-fluid row cart-1 p-2">
-                    <div class="container cart-content col-lg-10 row p-0">
-                        <div class="row p-0">
+                <div class="container-fluid row cart-1 p-2 ">
+                    <div class="container cart-content col-lg-10 row p-0 ">
+                        <div class="row p-0 ">
 
 
-                            <div class="d-flex col-lg-6 heading p-0">
-                                <div class="d-flex heading-left p-3">
+                            <div class="d-flex col-lg-6 heading p-0 ">
+                                <div class="d-flex heading-left p-3 ">
                                     <p>MIS- Discovery Age 7&8 Sundays 10:00AM SO23-01-DSC 1-Sep-Oct 2023</p>
                                 </div>
-                                <div class="d-flex heading-right ">
-                                    <span align="right" class="remove hide-show p-2"><i class="bi bi-trash"></i></span>
+                                <div class="heading-right hide-show ">
+                                    <i class="bi bi-trash "></i>
                                 </div>
                             </div>
-                            <div class=" col-lg-3 hide-show">
-                                <span class="">Age: </span>
+                            <div class=" col-lg-3 hide-show ">
+                                <span class=" ">Age: </span>
                                 <li> 8 years old</li>
                             </div>
-                            <div class="col-lg-3 d-flex">
-                                <span class="hide-show">Date: </span>
+                            <div class="col-lg-3 d-flex ">
+                                <span class="hide-show ">Date: </span>
                                 <li> Sep 10, 2023 - Oct 29, 2023</li>
                             </div>
-                            <div class="d-flex col-lg-3">
-                                <span class="hide-show">Time: </span>
+                            <div class="d-flex col-lg-3 ">
+                                <span class="hide-show ">Time: </span>
                                 <li> Sunday @9:00-10:00AM</li>
                             </div>
 
                         </div>
                         <hr>
-                        <div class="d-flex">
-                            <div class="d-flex justify-content-left">
-                                <p class="py-2">Student Details</p>
+                        <div class="accordion p-0" id="accordionExample">
+                            <div class="d-flex px-2">
+                                <div class="d-flex justify-content-left">
+                                    Student Details
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOTwo" aria-expanded="true" aria-controls="collapseOne">
+                                    </button>
+                                </div>
+                                <div class="justify-content-right hide-show">
+                                    <i class="bi bi-pencil-fill "></i><span align="right" class="ps-2 hide-show">Edit</span>
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-right ">
-                                <i class="bi bi-pencil-fill hide-show"></i><span align="right" class="ps-2 hide-show">Edit</span>
-                            </div>
-                        </div>
 
-                        <div class="cart-details row p-0">
-                            <div class="col-lg-10 row d-flex">
-                                <div class="col-lg-5">
-                                    <p>First Name<br><span>loremipsum@gmail.com</span></p>
+                            <div class="cart-details row p-0 ">
+                                <div class=" col-lg-10 row p-0 accordion-collapse collapse-on-sm" id="collapseOTwo" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="col-lg-5 ">
+                                        <p>First Name<br><span>loremipsum@gmail.com</span></p>
+                                    </div>
+                                    <div class="col-lg-4 ">
+                                        <p>Last Name<br><span>+91 9003557123</span></p>
+                                    </div>
+                                    <div class="col-lg-3 ">
+                                        <p>Date of birth<br><span>22 Sep 2000</span></p>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <p>Last Name<br><span>+91 9003557123</span></p>
-                                </div>
-                                <div class="col-lg-3">
-                                    <p>Date of birth<br><span>22 Sep 2000</span></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 row p-0">
-                                <div class="orange tution-fee p-3">
-                                    <p>Tution Fee +HST
+                                <div class="col-lg-2 row p-0 ">
+                                    <div class="orange tution-fee ">
+                                        <p>Tution Fee +HST
 
-                                    </p>
-                                    <h4>$360</h4>
+                                        </p>
+                                        <h4>$360</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 py-3 edit-remove">
+                    <div class="col-lg-2 py-3 edit-remove ">
 
-                        <div class="edit">
+                        <div class="edit ">
                             Edit
                         </div>
-                        <div class="remove">
+                        <div class="remove ">
                             Remove
                         </div>
                     </div>
 
 
                 </div>
-                <div class="container-fluid row cart-1 p-2">
-                    <div class="container cart-content col-lg-10 row p-0">
-                        <div class="row p-0">
+                <div class="container-fluid row cart-1 p-2 ">
+                    <div class="container cart-content col-lg-10 row p-0 ">
+                        <div class="row p-0 ">
 
 
-                            <div class="d-flex col-lg-6 heading p-0">
-                                <div class="d-flex heading-left p-3">
+                            <div class="d-flex col-lg-6 heading p-0 ">
+                                <div class="d-flex heading-left p-3 ">
                                     <p>MIS- Discovery Age 7&8 Sundays 10:00AM SO23-01-DSC 1-Sep-Oct 2023</p>
                                 </div>
-                                <div class="d-flex heading-right ">
-                                    <span align="right" class="remove hide-show p-2"><i class="bi bi-trash"></i></span>
+                                <div class="heading-right hide-show ">
+                                    <i class="bi bi-trash "></i>
                                 </div>
                             </div>
-                            <div class=" col-lg-3 hide-show">
-                                <span class="">Age: </span>
+                            <div class=" col-lg-3 hide-show ">
+                                <span class=" ">Age: </span>
                                 <li> 8 years old</li>
                             </div>
-                            <div class="col-lg-3 d-flex">
-                                <span class="hide-show">Date: </span>
+                            <div class="col-lg-3 d-flex ">
+                                <span class="hide-show ">Date: </span>
                                 <li> Sep 10, 2023 - Oct 29, 2023</li>
                             </div>
-                            <div class="d-flex col-lg-3">
-                                <span class="hide-show">Time: </span>
+                            <div class="d-flex col-lg-3 ">
+                                <span class="hide-show ">Time: </span>
                                 <li> Sunday @9:00-10:00AM</li>
                             </div>
 
                         </div>
                         <hr>
-                        <div class="d-flex">
-                            <div class="d-flex justify-content-left">
-                                <p class="py-2">Student Details</p>
+                        <div class="accordion p-0" id="accordionExample">
+                            <div class="d-flex px-2">
+                                <div class="d-flex justify-content-left">
+                                    Student Details
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOThree" aria-expanded="true" aria-controls="collapseOne">
+                                    </button>
+                                </div>
+                                <div class="justify-content-right hide-show">
+                                    <i class="bi bi-pencil-fill "></i><span align="right" class="ps-2 hide-show">Edit</span>
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-right ">
-                                <i class="bi bi-pencil-fill hide-show"></i><span align="right" class="ps-2 hide-show">Edit</span>
-                            </div>
-                        </div>
 
-                        <div class="cart-details row p-0">
-                            <div class="col-lg-10 row d-flex">
-                                <div class="col-lg-5">
-                                    <p>First Name<br><span>loremipsum@gmail.com</span></p>
+                            <div class="cart-details row p-0 ">
+                                <div class=" col-lg-10 row p-0 accordion-collapse collapse-on-sm" id="collapseOThree" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="col-lg-5 ">
+                                        <p>First Name<br><span>loremipsum@gmail.com</span></p>
+                                    </div>
+                                    <div class="col-lg-4 ">
+                                        <p>Last Name<br><span>+91 9003557123</span></p>
+                                    </div>
+                                    <div class="col-lg-3 ">
+                                        <p>Date of birth<br><span>22 Sep 2000</span></p>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <p>Last Name<br><span>+91 9003557123</span></p>
-                                </div>
-                                <div class="col-lg-3">
-                                    <p>Date of birth<br><span>22 Sep 2000</span></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 row p-0">
-                                <div class="orange tution-fee p-3">
-                                    <p>Tution Fee +HST
+                                <div class="col-lg-2 row p-0 ">
+                                    <div class="orange tution-fee ">
+                                        <p>Tution Fee +HST
 
-                                    </p>
-                                    <h4>$360</h4>
+                                        </p>
+                                        <h4>$360</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 py-3 edit-remove">
+                    <div class="col-lg-2 py-3 edit-remove ">
 
-                        <div class="edit">
+                        <div class="edit ">
                             Edit
                         </div>
-                        <div class="remove">
+                        <div class="remove ">
                             Remove
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
-            <div class="col-lg-4 total-div">
+            <div class="col-lg-4 total-div order-1 order-lg-2">
                 <div class="container p-3 total ">
-                    <div class="d-flex">
-                        <div class="d-flex justify-content-left">
-                            <p class="py-1">Programs: Robotics</p>
+                    <div class="d-flex ">
+                        <div class="d-flex justify-content-left ">
+                            <p class="py-1 ">Programs: Robotics</p>
                         </div>
-                        <div class="d-flex justify-content-right">
+                        <div class="d-flex justify-content-right ">
                             <span>$360</span>
                         </div>
                     </div>
-                    <div class="d-flex">
-                        <div class="d-flex justify-content-left">
-                            <p class="py-1">Camps: Robotics</p>
+                    <div class="d-flex ">
+                        <div class="d-flex justify-content-left ">
+                            <p class="py-1 ">Camps: Robotics</p>
                         </div>
-                        <div class="d-flex justify-content-right">
+                        <div class="d-flex justify-content-right ">
                             <span>$360</span>
                         </div>
                     </div>
 
 
-                    <div class="container coupon mt-4 mb-3 p-0">
-                        <input type="text" class="form-control border border-dark rounded" placeholder="Coupon">
-                        <button class="btn-primary rounded">Apply</button>
+                    <div class="container coupon mt-4 mb-3 p-0 ">
+                        <input type="text " class="form-control border border-dark rounded " placeholder="Coupon ">
+                        <button class="btn-primary rounded ">Apply</button>
                     </div>
-                    <div class="d-flex">
-                        <div class="d-flex justify-content-left">
-                            <p class="my-2">Sub-total</p>
+                    <div class="d-flex ">
+                        <div class="d-flex justify-content-left ">
+                            <p class="my-2 ">Sub-total</p>
                         </div>
-                        <div class="d-flex justify-content-right">
+                        <div class="d-flex justify-content-right ">
                             <span>$720</span>
                         </div>
                     </div>
-                    <div class="d-flex">
-                        <div class="d-flex justify-content-left">
-                            <p class="my-2">HST</p>
+                    <div class="d-flex ">
+                        <div class="d-flex justify-content-left ">
+                            <p class="my-2 ">HST</p>
                         </div>
-                        <div class="d-flex justify-content-right">
+                        <div class="d-flex justify-content-right ">
                             <span>$18</span>
                         </div>
                     </div>
 
 
                     <hr>
-                    <div class="d-flex">
-                        <div class="d-flex justify-content-left">
+                    <div class="d-flex ">
+                        <div class="d-flex justify-content-left ">
                             <p>To Pay</p>
                         </div>
-                        <div class="d-flex justify-content-right">
-                            <span align="right">$738</span>
+                        <div class="d-flex justify-content-right ">
+                            <span align="right ">$738</span>
                         </div>
                     </div>
 
-                    <div class="d-grid mt-4">
-                        <button type="button" class="btn buy-button btn-block">Proceed to buy (2 Items)</button>
+                    <div class="d-grid mt-4 ">
+                        <button type="button " class="btn buy-button btn-block ">Proceed to buy (2 Items)</button>
                     </div>
                 </div>
             </div>

@@ -110,6 +110,7 @@ span {
 .justify-content-left {
     width: 70%;
     justify-content: left;
+    align-items: center;
 }
 
 .justify-content-right {
@@ -119,6 +120,30 @@ span {
 
 .hide-show {
     display: none;
+}
+
+
+/* .accordion {
+    display: none;
+} */
+
+.collapse-on-sm {
+    display: flex;
+}
+
+.accordion-button {
+    display: none;
+    width: auto;
+    background-color: transparent;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
 }
 
 @media (max-width: 992px) {
@@ -133,6 +158,7 @@ span {
     .tution-fee {
         display: flex;
         align-items: center;
+        padding: 8px;
         background: #000025;
         color: #fff;
         border-radius: 8px;
@@ -162,16 +188,32 @@ span {
         border-bottom-right-radius: 8px;
     }
     .heading-right {
-        width: 10%;
+        width: 15%;
         align-items: center;
-        justify-content: right;
+        justify-content: center;
+        color: #F18234;
     }
     .remove {
         width: 100%;
         height: auto;
         background-color: #EBF6FE;
     }
+    .collapse-on-sm {
+        display: none;
+    }
+    .collapse-on-sm.show {
+        display: block;
+    }
     /* .btn-primary {
         margin-left: 20px;
     } */
+    .collapse-on-sm {
+        display: none;
+    }
+    .collapse-on-sm.show {
+        display: block;
+    }
+    .accordion-button {
+        display: flex;
+    }
 }
