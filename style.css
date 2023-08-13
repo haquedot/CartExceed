@@ -35,6 +35,8 @@ li {
 
 span {
     color: #707070;
+    font-family: Poppins;
+    text-align: center;
 }
 
 .orange {
@@ -130,6 +132,38 @@ span {
 .buy-button {
     background-color: #F18234;
     color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+.buy-button:hover {
+    background-color: #db762d;
+    color: #fff;
+}
+
+.buy-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.pay {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.18px;
+}
+
+.pay span {
+    color: #000;
 }
 
 .justify-content-left {
@@ -141,6 +175,7 @@ span {
 .justify-content-right {
     width: 30%;
     justify-content: right;
+    align-items: center;
 }
 
 .hide-show {
