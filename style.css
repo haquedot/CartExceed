@@ -350,6 +350,10 @@ span {
     box-shadow: none;
 }
 
+.collapse:not(.show) {
+    display: flex;
+}
+
 @media (max-width: 992px) {
     /* .row {
         display: block;
@@ -410,6 +414,7 @@ span {
         width: 48px;
         height: 48px;
         margin-left: 16px;
+        border-radius: 7px;
         padding: 12px;
         display: flex;
     }
@@ -496,10 +501,13 @@ span {
         height: auto;
         background-color: #EBF6FE;
     }
-    .collapse-on-sm {
+    .collapse {
         display: none;
     }
-    .collapse-on-sm.show {
+    .collapse:not(.show) {
+        display: none;
+    }
+    .collapse.show {
         display: block;
         max-height: auto;
         overflow: hidden;
