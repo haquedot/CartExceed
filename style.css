@@ -12,6 +12,11 @@ h6 {
 .modal-header {
     border-bottom: none;
     font-family: Poppins;
+    padding: 14px 24px 14px 24px;
+}
+
+.modal-body {
+    padding-left: 24px;
 }
 
 .close {
@@ -20,7 +25,7 @@ h6 {
 }
 
 .modal-dialog {
-    max-width: 80%;
+    max-width: 60%;
 }
 
 .modal-content {
@@ -358,6 +363,12 @@ span {
     /* .row {
         display: block;
     } */
+    .modal-header {
+        padding: 14px 14px 14px 14px;
+    }
+    .modal-body {
+        padding-left: 14px;
+    }
     .modal-dialog {
         max-width: 100%;
     }
