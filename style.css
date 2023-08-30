@@ -114,16 +114,22 @@ p {
 }
 
 .tution-fee {
-    padding-top: 4px;
-    padding-right: 30px;
+    padding-top: 5px;
+    padding-right: 41px;
+    letter-spacing: 0.16px;
 }
 
 .tution-fee p {
     text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.16px;
 }
 
 .tution-fee h4 {
     text-align: right;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 p {
@@ -162,12 +168,26 @@ span {
     background-color: #EBF6FE;
 }
 
+.header {
+    padding: 12px;
+    padding-right: 30px;
+    padding-bottom: 0;
+}
+
+.heading-content {
+    padding-left: 8px;
+}
+
+.content {
+    padding-top: 12px;
+}
+
 .cart-1 {
     margin-bottom: 18px;
 }
 
 .edit-remove {
-    margin-left: -10px;
+    margin-left: -8px;
 }
 
 .edit {
@@ -175,7 +195,6 @@ span {
     justify-content: center;
     align-items: center;
     width: 99px;
-    height: 88px;
     flex-shrink: 0;
     border: none;
     border-radius: 7px 7px 0px 0px;
@@ -191,6 +210,7 @@ span {
     justify-content: center;
     align-items: center;
     padding-bottom: 12px;
+    font-size: 14px;
 }
 
 .edit p {
@@ -208,7 +228,6 @@ span {
     justify-content: center;
     align-items: center;
     width: 99px;
-    height: 88px;
     flex-shrink: 0;
     border: none;
     border-radius: 0px 0px 7px 7px;
@@ -224,6 +243,7 @@ span {
     justify-content: center;
     align-items: center;
     padding-bottom: 12px;
+    font-size: 16px;
 }
 
 .coupon {
@@ -489,9 +509,23 @@ span {
         display: flex;
         align-items: center;
     }
+    .header {
+        padding: 0px;
+    }
+    .heading-content {
+        padding-left: 12px;
+        padding-bottom: 12px;
+    }
+    .content {
+        padding-bottom: 12px;
+        padding-top: 0px;
+    }
     .heading {
         width: 100%;
         margin-bottom: 11px;
+    }
+    .heading p {
+        padding: 12px;
     }
     .heading-left {
         align-items: center;
