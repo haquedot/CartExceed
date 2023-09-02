@@ -119,7 +119,7 @@ p {
 
 .tution-fee {
     padding-top: 5px;
-    padding-right: 41px;
+    padding-right: 16px;
     letter-spacing: 0.16px;
 }
 
@@ -184,10 +184,6 @@ span {
 
 .content {
     padding-top: 12px;
-}
-
-.cart-1 {
-    margin-bottom: 18px;
 }
 
 .edit-remove {
@@ -356,22 +352,10 @@ span {
     display: none;
 } */
 
-.collapse-on-sm {
-    display: flex;
-}
-
-.collapse-on-sm.show {
-    display: flex;
-}
-
 .accordion-button {
-    display: none;
+    display: flex;
     width: auto;
     background-color: transparent;
-}
-
-.accordion-button:focus {
-    box-shadow: none;
 }
 
 .accordion-button:not(.collapsed) {
@@ -379,8 +363,8 @@ span {
     box-shadow: none;
 }
 
-.collapse:not(.show) {
-    display: flex;
+.accordion-button:focus {
+    box-shadow: none;
 }
 
 @media (max-width: 992px) {
