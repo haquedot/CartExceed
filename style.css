@@ -9,6 +9,47 @@ h6 {
     margin-bottom: 21px;
 }
 
+.thead {
+    margin-bottom: 18px;
+    background-color: #EBF6FE;
+    border-radius: 8px;
+}
+
+.tbody {
+    /* margin-bottom: 18px; */
+    background-color: #EBF6FE;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.th {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
+.cart-head {
+    display: flex;
+    border-top-left-radius: 8px;
+    background-color: #EBF6FE;
+    color: #db762d;
+}
+
+.cart-foot {
+    background-color: #EBF6FE;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+/* td {text-align: center;
+    align-items: center;
+} */
+
 .modal-header {
     border-bottom: none;
     font-family: Poppins;
@@ -118,6 +159,10 @@ p {
 }
 
 .tution-fee {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
     padding-top: 5px;
     padding-right: 16px;
     letter-spacing: 0.16px;
@@ -137,13 +182,14 @@ p {
 }
 
 p {
-    width: 100%;
+    /* width: 100%; */
     margin: 0;
     font-size: 14px;
     font-family: Poppins;
 }
 
 li {
+    list-style: none;
     color: #707070;
 }
 
@@ -184,6 +230,18 @@ span {
 
 .content {
     padding-top: 12px;
+}
+
+.btn-edit {
+    color: #2a9aeb;
+    background-color: transparent;
+
+}
+
+.btn-remove {
+    color: #FC0D1B;
+    background-color: transparent;
+
 }
 
 .edit-remove {
@@ -266,7 +324,7 @@ span {
 
 .total-div {
     display: flex;
-    justify-content: ;
+    justify-content: center;
     align-items: center;
 }
 
@@ -352,10 +410,22 @@ span {
     display: none;
 } */
 
-.accordion-button {
+.collapse-on-sm {
     display: flex;
+}
+
+.collapse-on-sm.show {
+    display: flex;
+}
+
+.accordion-button {
+    display: none;
     width: auto;
     background-color: transparent;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
 }
 
 .accordion-button:not(.collapsed) {
@@ -363,34 +433,40 @@ span {
     box-shadow: none;
 }
 
-.accordion-button:focus {
-    box-shadow: none;
+.collapse:not(.show) {
+    display: flex;
 }
 
 @media (max-width: 992px) {
+
     /* .row {
         display: block;
     } */
     .modal-header {
         padding: 14px 14px 14px 14px;
     }
+
     .modal-body {
         padding-left: 14px;
     }
+
     .modal-dialog {
         max-width: 100%;
     }
+
     .modal-footer {
         width: 100%;
         margin-top: 36px;
         padding: 0;
     }
+
     .modal-footer .btn-done {
         width: 50%;
         margin: 0;
         border-top-right-radius: 0;
         border-bottom-left-radius: 0;
     }
+
     .modal-footer .add {
         margin: 0;
         width: 50%;
@@ -402,33 +478,41 @@ span {
         background: none;
         margin: 0;
     }
+
     h6 {
         margin-top: 22px;
         margin-bottom: 14px;
     }
+
     li {
         padding-left: 4px;
         list-style: none;
         color: #000;
     }
+
     .remove-modal {
         display: none;
     }
+
     .student-2 {
         display: none;
     }
+
     h6 {
         font-size: 16px;
         margin-bottom: 14px;
     }
+
     .birth-remove {
         width: 100%;
         display: flex;
     }
+
     .input-div .birth {
         width: 90%;
         display: flex;
     }
+
     .input-div .remove {
         width: 48px;
         height: 48px;
@@ -437,84 +521,138 @@ span {
         padding: 12px;
         display: flex;
     }
+
     .input-div .remove i {
         padding: 0;
     }
+
     .input-div {
         width: 100%;
         padding-right: 0;
     }
+
     .para p {
         width: auto;
     }
+
     .remove-mob button {
         background-color: transparent;
         color: #FC0D1B;
         border: none;
     }
+
+    .tbody {
+        border-radius: 8px;
+    }
+
+    .cart-head {
+        background-color: #2a9aeb;
+        color: #fff;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+
+    }
+
+    .cart-foot {
+        z-index: -1;
+        margin-top: -12px;
+        background-color: transparent;
+    }
+
     .hide-mob {
         display: none;
     }
+
+    .btn-edit {
+        color: #fff;
+        background-color: #2a9aeb;
+        border-bottom-left-radius: 8px;
+
+    }
+
+    .btn-remove {
+        color: #fff;
+        background-color: #FC0D1B;
+        border-bottom-right-radius: 8px;
+    }
+
     .edit-remove {
         display: none;
     }
+
     .edit-mob span {
         color: #000025;
     }
+
     .edit-mob button {
         display: flex;
         align-items: center;
         background-color: transparent;
         border: none;
     }
+
     .tution-div {
         display: none;
     }
+
+
     .tution-fee {
-        display: flex;
-        align-items: center;
+        display: inline;
+        text-align: right;
         background: #000025;
         color: #fff;
-        border-radius: 8px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+
         padding: 16px;
-        padding-top: 32px;
-        z-index: -1;
-        margin-top: -20px;
+        /* padding-top: 32px; */
+        /* z-index: -1; */
+        /* margin-top: -20px; */
     }
+
     .tution-fee p {
         text-align: left;
     }
+
     .tution-fee h4 {
         text-align: right;
         margin: 0;
     }
+
     .form-control {
         margin-right: -100px;
         margin-top: -2px;
         margin-bottom: -2px;
     }
+
     .hide-show {
         display: flex;
         align-items: center;
     }
+
     .header {
         padding: 0px;
     }
+
     .heading-content {
         padding-left: 12px;
         padding-bottom: 12px;
     }
+
     .content {
         padding-bottom: 12px;
         padding-top: 0px;
     }
+
     .heading {
         width: 100%;
         margin-bottom: 11px;
     }
+
     .heading p {
         padding: 12px;
     }
+
     .heading-left {
         align-items: center;
         width: 90%;
@@ -523,37 +661,45 @@ span {
         border-top-left-radius: 8px;
         border-bottom-right-radius: 8px;
     }
+
     .heading-right {
         width: 15%;
         align-items: center;
         justify-content: center;
         color: #F18234;
     }
+
     .remove {
         width: 100%;
         height: auto;
         background-color: #EBF6FE;
     }
+
     .collapse {
         display: none;
     }
+
     .collapse:not(.show) {
         display: none;
     }
+
     .collapse.show {
         display: block;
         max-height: auto;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
     }
+
     .btn-primary {
         padding-bottom: 8px;
         margin-left: -12px;
     }
+
     .accordion-button {
         display: flex;
         padding: 12px;
     }
+
     .total {
         box-shadow: none;
         border: 0.5px solid #F18234;
