@@ -1,3 +1,6 @@
+div{
+    font-family: Poppins;
+}
 h6 {
     color: #F18234;
     font-family: Poppins;
@@ -7,6 +10,54 @@ h6 {
     line-height: normal;
     margin-top: 31px;
     margin-bottom: 21px;
+}
+
+h5 {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
+label {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    margin-top: 26px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    font-family: Poppins;
+}
+
+
+li {
+    list-style: none;
+    color: #707070;
+}
+
+span {
+    color: #707070;
+    font-family: Poppins;
+    /* text-align: center; */
+    font-size: 14px;
+}
+
+.orange {
+    color: #F18234;
+}
+
+.row {
+    margin: 0;
 }
 
 .thead {
@@ -46,27 +97,8 @@ h6 {
 
 }
 
-/* td {text-align: center;
-    align-items: center;
-} */
-
-.modal-header {
-    border-bottom: none;
-    font-family: Poppins;
-    padding: 14px 24px 14px 24px;
-}
-
-.modal-body {
-    padding-left: 24px;
-}
-
-.close {
-    background-color: transparent;
-    border: none;
-}
-
 .modal-dialog {
-    max-width: 60%;
+    max-width: 493px;
 }
 
 .modal-content {
@@ -75,6 +107,13 @@ h6 {
 
 .modal-footer {
     border-top: none;
+
+}
+
+.modal-footer button {
+    background-color: #FC0D1B;
+    border-radius: 8px;
+    margin: 16px 24px;
 }
 
 .modal-footer .btn-done {
@@ -95,31 +134,6 @@ h6 {
     font-family: Poppins;
 }
 
-h5 {
-    text-align: center;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.16px;
-}
-
-label {
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.16px;
-    margin-top: 26px;
-    margin-bottom: 12px;
-}
-
-p {
-    margin: 0;
-}
-
 .form-control {
     border: 1px solid #707070;
     display: flex;
@@ -129,29 +143,8 @@ p {
     flex-shrink: 0;
 }
 
-.input-div {
-    display: block;
-    width: 30%;
-    padding-right: 30px;
-}
-
-.input-div .remove {
-    display: none;
-}
-
 .form-control:disabled {
     background-color: #B1B1B1;
-}
-
-.remove-modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    width: 10%;
-    background-color: #EBF6FE;
-    color: #FC0D1B;
-    margin-top: 30px;
 }
 
 .row {
@@ -181,57 +174,6 @@ p {
     font-weight: 500;
 }
 
-p {
-    /* width: 100%; */
-    margin: 0;
-    font-size: 14px;
-    font-family: Poppins;
-}
-
-li {
-    list-style: none;
-    color: #707070;
-}
-
-span {
-    color: #707070;
-    font-family: Poppins;
-    text-align: center;
-    font-size: 14px;
-}
-
-.orange {
-    color: #F18234;
-}
-
-.row {
-    margin: 0;
-}
-
-
-/* .cart {
-    margin: 8px;
-} */
-
-.cart-content {
-    border-radius: 8px;
-    background-color: #EBF6FE;
-}
-
-.header {
-    padding: 12px;
-    padding-right: 30px;
-    padding-bottom: 0;
-}
-
-.heading-content {
-    padding-left: 8px;
-}
-
-.content {
-    padding-top: 12px;
-}
-
 .btn-edit {
     color: #2a9aeb;
     background-color: transparent;
@@ -242,66 +184,6 @@ span {
     color: #FC0D1B;
     background-color: transparent;
 
-}
-
-.edit-remove {
-    margin-left: -12px;
-}
-
-.edit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 99px;
-    flex-shrink: 0;
-    border: none;
-    border-radius: 7px 7px 0px 0px;
-    color: #fff;
-    background: #34A2F1;
-    backdrop-filter: blur(6px);
-    padding-top: 26px;
-    padding-bottom: 14px;
-}
-
-.edit i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 12px;
-    font-size: 14px;
-}
-
-.edit p {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.16px;
-}
-
-.remove {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 99px;
-    flex-shrink: 0;
-    border: none;
-    border-radius: 0px 0px 7px 7px;
-    color: #FC0D1B;
-    background: #D1D1D1;
-    backdrop-filter: blur(6px);
-    padding-top: 18px;
-    padding-bottom: 12px;
-}
-
-.remove i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 12px;
-    font-size: 16px;
 }
 
 .coupon {
@@ -322,12 +204,6 @@ span {
     color: white;
 }
 
-.total-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .total {
     border: 2px solid #F18234;
     /* border-right: none; */
@@ -337,15 +213,6 @@ span {
     margin-bottom: 18px;
 }
 
-.sub-total span {
-    color: #000;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.14px;
-}
 
 .form-control:focus {
     outline: none;
@@ -385,100 +252,12 @@ span {
     letter-spacing: 0.18px;
 }
 
-.pay span {
-    color: #000;
-}
-
-.justify-content-left {
-    width: 70%;
-    justify-content: left;
-    align-items: center;
-}
-
-.justify-content-right {
-    width: 30%;
-    justify-content: right;
-    align-items: center;
-}
-
 .hide-show {
     display: none;
 }
 
 
-/* .accordion {
-    display: none;
-} */
-
-.collapse-on-sm {
-    display: flex;
-}
-
-.collapse-on-sm.show {
-    display: flex;
-}
-
-.accordion-button {
-    display: none;
-    width: auto;
-    background-color: transparent;
-}
-
-.accordion-button:focus {
-    box-shadow: none;
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: transparent;
-    box-shadow: none;
-}
-
-.collapse:not(.show) {
-    display: flex;
-}
-
 @media (max-width: 992px) {
-
-    /* .row {
-        display: block;
-    } */
-    .modal-header {
-        padding: 14px 14px 14px 14px;
-    }
-
-    .modal-body {
-        padding-left: 14px;
-    }
-
-    .modal-dialog {
-        max-width: 100%;
-    }
-
-    .modal-footer {
-        width: 100%;
-        margin-top: 36px;
-        padding: 0;
-    }
-
-    .modal-footer .btn-done {
-        width: 50%;
-        margin: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-
-    .modal-footer .add {
-        margin: 0;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        color: #34A2F1;
-        border: none;
-        background: none;
-        margin: 0;
-    }
-
     h6 {
         margin-top: 22px;
         margin-bottom: 14px;
@@ -490,58 +269,48 @@ span {
         color: #000;
     }
 
-    .remove-modal {
+    .form-control {
+        margin-right: -100px;
+        margin-top: -2px;
+        margin-bottom: -2px;
+    }
+
+    .hide-show {
+        display: flex;
+        align-items: center;
+    }
+
+    .hide-mob {
         display: none;
     }
 
-    .student-2 {
-        display: none;
+    .modal-dialog {
+        max-width: 493px;
     }
 
-    h6 {
-        font-size: 16px;
-        margin-bottom: 14px;
-    }
-
-    .birth-remove {
-        width: 100%;
-        display: flex;
-    }
-
-    .input-div .birth {
-        width: 90%;
-        display: flex;
-    }
-
-    .input-div .remove {
-        width: 48px;
-        height: 48px;
-        margin-left: 16px;
-        border-radius: 7px;
-        padding: 12px;
-        display: flex;
-    }
-
-    .input-div .remove i {
+    .modal-footer {
         padding: 0;
     }
 
-    .input-div {
+    .modal-footer button {
+        justify-content: center;
         width: 100%;
-        padding-right: 0;
+        padding: 0;
+        margin: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
     }
 
-    .para p {
-        width: auto;
+
+
+    .modal-footer .btn-done {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
-    .remove-mob button {
-        background-color: transparent;
-        color: #FC0D1B;
-        border: none;
-    }
 
     .tbody {
+        z-index: -1;
         border-radius: 8px;
     }
 
@@ -554,13 +323,9 @@ span {
     }
 
     .cart-foot {
-        z-index: -1;
+        /* z-index: -1; */
         margin-top: -12px;
         background-color: transparent;
-    }
-
-    .hide-mob {
-        display: none;
     }
 
     .btn-edit {
@@ -576,26 +341,6 @@ span {
         border-bottom-right-radius: 8px;
     }
 
-    .edit-remove {
-        display: none;
-    }
-
-    .edit-mob span {
-        color: #000025;
-    }
-
-    .edit-mob button {
-        display: flex;
-        align-items: center;
-        background-color: transparent;
-        border: none;
-    }
-
-    .tution-div {
-        display: none;
-    }
-
-
     .tution-fee {
         display: inline;
         text-align: right;
@@ -610,94 +355,9 @@ span {
         /* margin-top: -20px; */
     }
 
-    .tution-fee p {
-        text-align: left;
-    }
-
-    .tution-fee h4 {
-        text-align: right;
-        margin: 0;
-    }
-
-    .form-control {
-        margin-right: -100px;
-        margin-top: -2px;
-        margin-bottom: -2px;
-    }
-
-    .hide-show {
-        display: flex;
-        align-items: center;
-    }
-
-    .header {
-        padding: 0px;
-    }
-
-    .heading-content {
-        padding-left: 12px;
-        padding-bottom: 12px;
-    }
-
-    .content {
-        padding-bottom: 12px;
-        padding-top: 0px;
-    }
-
-    .heading {
-        width: 100%;
-        margin-bottom: 11px;
-    }
-
-    .heading p {
-        padding: 12px;
-    }
-
-    .heading-left {
-        align-items: center;
-        width: 90%;
-        background-color: #34A2F1;
-        color: #fff;
-        border-top-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-    }
-
-    .heading-right {
-        width: 15%;
-        align-items: center;
-        justify-content: center;
-        color: #F18234;
-    }
-
-    .remove {
-        width: 100%;
-        height: auto;
-        background-color: #EBF6FE;
-    }
-
-    .collapse {
-        display: none;
-    }
-
-    .collapse:not(.show) {
-        display: none;
-    }
-
-    .collapse.show {
-        display: block;
-        max-height: auto;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-    }
-
     .btn-primary {
         padding-bottom: 8px;
         margin-left: -12px;
-    }
-
-    .accordion-button {
-        display: flex;
-        padding: 12px;
     }
 
     .total {
