@@ -1,6 +1,7 @@
-div{
+div {
     font-family: Poppins;
 }
+
 h6 {
     color: #F18234;
     font-family: Poppins;
@@ -66,6 +67,13 @@ span {
     border-radius: 8px;
 }
 
+.classList-head {
+    display: flex;
+    border-top-left-radius: 8px;
+    background-color: #EBF6FE;
+    color: #db762d;
+}
+
 .tbody {
     /* margin-bottom: 18px; */
     background-color: #EBF6FE;
@@ -89,7 +97,11 @@ span {
     background-color: #EBF6FE;
     color: #db762d;
 }
-
+.student-details p {
+    color: #707070;
+}.student-details span {
+    color: #000;
+}
 .cart-foot {
     background-color: #EBF6FE;
     border-top-right-radius: 8px;
@@ -322,6 +334,10 @@ span {
 
     }
 
+    .student-details span {
+        padding-bottom: 12px;
+    }
+
     .cart-foot {
         /* z-index: -1; */
         margin-top: -12px;
@@ -331,21 +347,23 @@ span {
     .btn-edit {
         color: #fff;
         background-color: #2a9aeb;
-        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
 
     }
 
     .btn-remove {
-        color: #fff;
-        background-color: #FC0D1B;
-        border-bottom-right-radius: 8px;
+        color: #FC0D1B;
+        background: #EBF6FE;
+        border-bottom-left-radius: 8px;
+        
     }
 
     .tution-fee {
         display: inline;
         text-align: right;
-        background: #000025;
-        color: #fff;
+        background: #EBF6FE;
+        /* color: #fff; */
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
 
